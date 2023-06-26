@@ -1,28 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
     <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    
 
-    <form action="" id="form">
-        <label for="">name</label>
-        <input type="text" id="name" name="name" required> <br>
-        <label for="">Surname</label>
-        <input type="text" id="Surname" name="Surname" required><br>
-        <label for="">Email</label>
-        <input type="text" id="Email" required><br>
-        <label for="">Age</label>
-        <input type="number"><br>
-        <input type="submit"><br>
-    </form>
-<div class="div">
-    <p id="alert"></p>
-</div>
+<body>
+
+    <div class="hola">
+        <form action="recibir.php" method="post" id="form" class="form">
+            <label for="">Numero de ficha</label>
+            <input type="text" id="numeroFicha" name="numeroFicha"><br>
+            <label for="">Nombre</label>
+            <input type="text" id="Nombre" name="Nombre"> <br>
+            <label for="">Apellido</label>
+            <input type="text" id="Apellido" name="Apellido"><br>
+            <label for="">Email</label>
+            <input type="text" id="Email" name="Email"><br>
+            <label for="">Telefono</label>
+            <input type="number" id="Telefono" name="Telefono">
+            <br>
+            <label for="hombre">hombre
+                <input type="radio" value="hombre" name="genero" id="hombre">
+            </label>
+            <label for="mujer">mujer
+                <input type="radio" value="mujer" name="genero" id="mujer">
+            </label>
+            <br>
+            <select name="ciudad" id="ciudad">
+                <option value="" selected disabled></option>
+                <option value="Bucaramanga">Bucaramanga</option>
+                <option value="Giron">Giron</option>
+                <option value="Bogota">Bogota</option>
+                <option value="Medellin">Medellin</option>
+            </select>
+            <br>
+            <label for="">Seleccione minimo 3 hablidades</label> <br>
+            <label for="opcion1">
+                <input type="checkbox" name="lenguaje" id="opcion1">
+                HTML</label>
+            <label for="opcion2">
+                <input type="checkbox" name="lenguaje" id="opcion2">
+                CSS</label>
+
+            <label for="opcion3">
+                <input type="checkbox" name="lenguaje" id="opcion3">
+                JavaScript
+            </label>
+            <label for="opcion4">
+                <input type="checkbox" name="lenguaje" id="opcion4">
+            PHP</label>
+            <label for="opcion5">
+                <input type="checkbox" name="lenguaje" id="opcion5">
+            JAVA</label>
+            <label for="opcion6">
+                <input type="checkbox" name="lenguaje" id="opcion6">
+            SQL</label>
+            <label for="opcion7">
+                <input type="checkbox" name="lenguaje" id="opcion7">
+            UML</label>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+    <div class="div">
+        <p id="alert"></p>
+    </div>
 
 </body>
+
 </html>
