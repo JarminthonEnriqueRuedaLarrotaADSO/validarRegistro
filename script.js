@@ -1,6 +1,5 @@
 addEventListener("DOMContentLoaded", (e) => {
 
-
     var formulario = document.getElementById('form');
     var numFicha = document.getElementById('numeroFicha');
     var nombre = document.getElementById('Nombre');
@@ -70,8 +69,6 @@ addEventListener("DOMContentLoaded", (e) => {
             return
         }
         else{alert('enviado');}
-
-
-        
+   
     })
 })
